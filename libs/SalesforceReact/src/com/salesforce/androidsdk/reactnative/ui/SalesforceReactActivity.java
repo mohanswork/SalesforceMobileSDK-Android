@@ -70,6 +70,10 @@ public abstract class SalesforceReactActivity extends ReactActivity implements S
         delegate = new SalesforceActivityDelegate(this);
     }
 
+    protected Bundle getLaunchOptions() {
+        return null;
+    }
+    
     /**
      * @return true if you want login to happen as soon as activity is loaded
      *         false if you want do login at a later point

@@ -28,6 +28,7 @@ package com.salesforce.androidsdk.reactnative.ui;
 import com.facebook.react.ReactActivityDelegate;
 
 import javax.annotation.Nullable;
+import android.os.Bundle;
 
 
 public class SalesforceReactActivityDelegate extends ReactActivityDelegate {

@@ -36,6 +36,11 @@ public class SalesforceReactActivityDelegate extends ReactActivityDelegate {
     private SalesforceReactActivity salesforceReactActivity;
     private boolean loaded = false;
 
+    @Nullable
+    @Override
+    protected Bundle getLaunchOptions() {
+        return salesforceReactActivity.getLaunchOptions();
+    }
 
     public SalesforceReactActivityDelegate(SalesforceReactActivity activity, @Nullable String mainComponentName) {
         super(activity, mainComponentName);
